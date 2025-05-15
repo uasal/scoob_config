@@ -1,16 +1,158 @@
 # this machine readable TOML file defines the common parameters between all tools in this repo.
 # It generally contains all the baselined details of the instrument that always apply.
+#OPTICS APPEAR IN ORDER OF INCIDENCE
 
-[Sensor]
-CMOS_QE = "$UASAL_ARCHIVE/example/path/from/repo/to/file/ZWO_ASI6200MM_Pro_QE_curve.fits"
-CMOS_gain = 4
-CMOS_read = 3  # [electrons]
-CMOS_well = 50000 # [electrons]
+[Source]
+state="installed"
+MFG = "NKT"
+Model = "SuperK Compact"
+SN = ""
+z= ""
 
-[Pupils]  # This should moved to stp_reference_data
-aper_clear_OD = '5m' # Outer diameter of clear aperture on M1
-D_chB_clear_OD = '2m' # Inner diameter of clear aperture on M1
+[LP]
+state="installed"
+MFG = ""
+Model = ""
+SN =""
+z= ""
 
-[sim_settings]  # settings for simulation tool
-npix = 4096 # number of pixels per frame
-beamrad = 0.4 # beam radius
+[QWP1]
+state="installed"
+MFG = ""
+Model = ""
+SN=""
+z= ""
+
+[LENS1]
+state="installed"
+MFG = ""
+Model = ""
+SN =""
+FL=""
+z=""
+
+[Spatial Filter]
+state="installed"
+MFG = "UA"
+Model = "Custom silicon nitride membrane"
+DOI = "10.1117/12.2677630"
+Diameter = "5um"
+SN= "NA"
+z=""
+description=""
+
+
+[OAP1]  # 
+state="installed"
+purpose="collimator"
+MFG = ""
+SN = ""
+FL=
+z=""
+
+[PUPIL1] #
+state="installed"
+RX="flat"
+RMS=""
+Purpose="fine pointing, pupil mask"
+Active_diameter="
+MFG = ""
+SN = ""
+FL="infinite"
+
+[PUPIL1-stage] #
+state="installed"
+MFG="Newport"
+Model=""
+SN=""
+
+[OAP2]  #
+state="installed"
+MFG = ""
+SN = ""
+
+[OAP3]  #
+state="installed"
+MFG = ""
+SN = ""
+
+[DM1]
+state="installed"
+MFG="Boston Micromachines"
+Model= "Kilo-C-1.5"
+SN="38AW007#029" 
+description=""
+
+[OAP4]  # 
+state="installed"
+
+
+[FPM]
+state="installed"
+Model = "Custom VVC"
+MFG="BeamCo"
+SN=""
+description=""
+
+[FOLD]
+state="installed"
+RX="flat"
+RMS=""
+Active_diameter="
+MFG = ""
+SN = ""
+FL="infinite"
+
+[OAP5]  # 
+state="installed"
+
+
+[FOLD]
+state="installed"
+RX="flat"
+RMS=""
+Active_diameter=""
+MFG = ""
+SN = ""
+FL="infinite"
+
+[LYOT]
+state="installed"
+Model="Custom Glass"
+Coating="100um Al"
+MFG="UA"
+SN=""
+description=""
+
+[SCI.QWP]
+state="installed"
+
+[SCI.LP]
+state="installed"
+
+[SCI.FOLD]
+state="installed"
+
+[SCI.L1]
+state="installed"
+
+
+[Sci.Sensor]
+state="installed"
+MFG = "ZWO"
+MODEL = "ASI294"
+CMOS_QE = ""
+description=""
+
+[LOWFS.L1]
+state="installed"
+
+[LOWFS.mask]
+state="none"
+
+[LOWFS.Sensor]
+MFG = "ZWO"
+MODEL = "ASI294"
+CMOS_QE = ""
+description=""
+
